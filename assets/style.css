@@ -1,0 +1,123 @@
+@font-face {
+    font-family: ev-font;
+    src: url(fonts/nasalization-rg.otf);
+}
+*{
+    font-family: "ev-font";
+    margin: 0;
+    padding: 0;
+    /* color: white; */
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: black;
+    color: white; */
+    overflow-x: hidden;
+}
+.navlist{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+    z-index: 2;
+
+}
+.home-image{
+    z-index: -1;
+
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center+
+    ;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    min-width: 60%;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+
+    /* float: right; */
+}
+.navlist a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 2vw;
+    
+}
+.home-image{
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.home-page-image{
+    /* background-image: url("1.png"); */
+    /* background-size:cover; */
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+.black{
+    background: linear-gradient(rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0.272), rgba(0, 0, 0, 0.838));
+    width: 100%;
+    height: 100%;
+}
+/* main{
+    margin-top: 100vh;
+} */
+
+.container h1{
+    font-size: 5vw;
+    margin-top: -15vw;
+    margin-left: 5vw;
+}
+.container h4{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-items: center; */
+    font-size: 2vw;
+    margin-left: 5vw;
+}
+.container span{
+    color: rgb(211, 180, 0)
+}
+#pana{
+    /* transform-origin: top right; */
+    animation: rotate 1s alternate infinite;
+    transform: translate(200px);
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
+}
+.corousel{
+    transform: translateY(20%);
+    margin-right: 4vw;
+}
+
